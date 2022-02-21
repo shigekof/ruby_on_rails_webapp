@@ -1,0 +1,15 @@
+<% provide(:title, 'Sign up') %>
+<% provide(:button_text, 'Create my account') %>
+<div class="content-container">
+  <div class="page-content">
+    <div class="form-page">
+      <h1>Sign up</h1>
+      <div class="row">
+        <%= render 'signup', url: signup_path %>
+      </div>
+        <p>
+          Already signed up？ <%= link_to "Log in", 'login_path' %>
+        </p>
+    </div>
+  </div>
+</div>

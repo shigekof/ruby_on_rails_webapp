@@ -1,0 +1,12 @@
+<% provide(:title, "Settings") %>
+<% provide(:button_text, 'Save changes') %>
+<div class="content-container">
+  <div class="page-content">
+    <div class="form-page">
+      <h1>Update your profile</h1>
+      <div class="row">
+        <%= render 'edit', url: user_path %>
+      </div>
+    </div>
+  </div>
+</div>

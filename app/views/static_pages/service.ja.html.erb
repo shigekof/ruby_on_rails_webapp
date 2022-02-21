@@ -1,0 +1,113 @@
+<% provide(:title, "What we do") %>
+<% content_for(:body_attributes) do %>
+    data-turbolinks="false"
+<% end %>
+<div class="service-image-container">
+  <div class="service service-img">
+    <div class="service-img-trans">
+      <div class="service-title">
+        <h1>サービス</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=service-subtitle>
+  <h2>
+    外国人観光客、または海外市場で成功するためのトータルソリューションをご提供いたします。
+    英語によるマーケティング、広告出稿、ウェブサイトやアプリの国際化など、
+    あなたのサービスや商品の認知度を日本語を話さない潜在顧客の間で高め、ビジネスをさらに拡大するお手伝いをいたします。
+    </br>
+    </br>
+  </h2>
+</div>
+<div class="content-container">
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-test.png", alt: "Marketing"), '#service-marketing' %>
+      <h1><%= link_to "マーケティング", '#service-marketing' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-landing.png", alt: "Advertising"), '#service-advertising' %>
+      <h1><%= link_to "広告出稿", '#service-advertising' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-internationalization.png", alt: "Localising"), '#service-localising' %>
+      <h1><%= link_to "国際化", '#service-localising' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-forwarding.png", alt: "Forwarding"), '#service-forwarding' %>
+      <h1><%= link_to "転送", '#service-forwarding' %></h1>
+    </div>
+  </div>
+</div>
+<div class="service-section">
+  <div class="service-marketing" id="service-marketing">
+    <h1>マーケティング</h1>
+    <p>
+      マーケティングに必要な情報（顧客、競合他社など）を英語ですべて分析しレポートを作成することは簡単なことではありません。
+      特にマーケティング分析では収集する情報が多く必要です。
+      あなたのビジネスにとって正しい戦略が何であるかを決めるために、マーケティングチームがあなたのビジネスの成功を最大限手助けさせていただきます。
+    </br>
+    </br>
+    サービス例：</br>
+    ・外国人観光客向け、または海外向けにマーケティング戦略を最適化</br>
+    ・国内、または海外の競合相手に関する情報をまとめレポートを作成</br>
+    ・ターゲットとする潜在顧客を見極め、あなたのビジネスにあった戦略サポート</br>
+    ・英語によるソーシャルメディアアカウントの作成とその運営のサポート</br>
+    </p>
+    <div class="service-marketing-pic">
+      <%= image_tag("sns-logos.png", alt: "Testing the market") %>
+    </div>
+  </div>
+  <div class="service-advertising" id="service-advertising">
+    <h1>広告出稿</h1>
+    <p>
+      広告出稿で最大限の効果を発揮させるためには適切なキーワードかつ正しい方法で広告を掲載することが重要です。
+      Goodle Adwords、Yahoo Promotional Adsなどのリスティング広告はもちろん、Facebook、
+      Twitter、Youtube、Instagramなどのソーシャルメディアでの英語による広告出稿をお手伝いさせていただきます。
+      </br>
+      </br>
+      サービス例：</br>
+      ・SEMにおいて英語による正しいキーワード選びや出稿、運営のお手伝い</br>
+      ・広告戦略を最適化するためのトラフィックやコンバージョン率などの分析</br>
+      ・英語によるソーシャルメディアの広告出稿、運営サポート</br>
+    </p>
+    <div class="service-marketing-pic">
+      <%= image_tag("sem-logos.png", alt: "Testing the market") %>
+    </div>
+  </div>
+  <div class="service-localising" id="service-localising">
+    <h1>国際化</h1>
+    <p>
+      日本語のネイティブ環境に育っていない人で日本語を読める人はそう多くありません。
+      日本語を理解しない人にあなたのサービスや商品に興味を持ってもらうために、
+      英語のウェブサイトやアプリを持っていることは非常に重要です。
+      日本語、英語ともに堪能な開発者が既存のプロジェクトを翻訳/国際化することも可能ですし、
+      新しいプロジェクトを日本語、英語の両方の言語で最初から作成することも可能です。
+      </br>
+      </br>
+      サービス例：</br>
+      ・既存のウェブサイトやアプリの国際化/翻訳</br>
+      ・日本語、英語両方による新しいプロジェクトの製作</br>
+      ・既存、または新規のウェブサイトやアプリの管理、更新</br>
+    </p>
+  </div>
+  <div class="service-forwarding" id="service-forwarding">
+    <h1>転送</h1>
+    <p>
+      英語でサービスを提供し始めた後、英語でお問い合わせがきても大丈夫です。
+      弊社が提供するあなた専用のメールアドレスに届いた英語によるお問い合わせを日本語に翻訳し、
+      1営業日以内にあなたに転送します。
+      </br>
+      </br>
+      サービス例：</br>
+      ・専用メールアドレスに届いた英語のお問い合わせを１営業日以内に翻訳、転送</br>
+    </p>
+  </div>
+</div>

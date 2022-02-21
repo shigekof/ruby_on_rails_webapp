@@ -1,0 +1,99 @@
+<% content_for(:body_attributes) do %>
+    data-turbolinks="false"
+<% end %>
+<div class="full-home">
+  <div class="image-container">
+    <div class="home-main home-img">
+      <div class="image-trans">
+        <div class="home-title">
+          <h1>言語の壁を越え、ビジネスを拡大する</h1>
+          <p>
+
+          </p>
+          <div class="services">
+            <%= link_to "もっと詳しく", what_we_do_path, class: "btn outline btn-lg btn-warning" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="home-section-white">
+      <div class="section-copy">
+        <h2>たくさんの潜在顧客があなたのすぐ目の前に</h2>
+        <p>
+          2017年に外国から日本を訪れた観光客数は約2869万人でした（JNTO調べ）。
+          これは前年よりも約19%も増加しているのです。
+          もしあなたの企業やビジネスが日本語のウェブサイトやアプリしかないとしたら
+          この約2869万人の潜在顧客と、2020年の東京オリンピックを目前に爆発的に増えるであろう外国人観光客からの売上を逃し続けることになるのです。
+          あなたの商品やサービスに対する需要は目の前にあるのに、言葉がわからないというだけで
+          それらを必要としている人たちに提供できないのはもったいないと思いませんか？
+          それだけではありません。
+          あなたのウェブサイトやアプリを英語化すれば、世界のマーケットへあなたの商品やサービスを売り出すことも可能なのです。
+        </p>
+      </div>
+      <div class="section-img">
+        <%= image_tag('home_section_top.jpg', alt: "Big potential right infront of you") %>
+      </div>
+    </div>
+    <div class="home-section-white">
+      <div class="section-copy">
+        <h2 class="section-title">あなたの企業やビジネスが世界マーケットへ</br>進出するお手伝いをさせていただきます。</h2>
+      </div>
+    </div>
+    <div class="home-content">
+      <div class="home-section" id="marketing">
+        <div class="section-copy">
+          <h2 class="section-title">
+            <%= link_to "マーケティング", what_we_do_path(anchor: "service-marketing") %>
+            </h2>
+          <p>
+            日本を訪れる外国人向け、または海外マーケット進出のための戦略を練るお手伝いをさせていただきます。
+            潜在顧客、文化的背景、マーケットの需要などあらゆる角度からリサーチしあなたのビジネスの成功を全力でサポートいたします。
+          </p>
+        </div>
+      </div>
+      <div class="home-section" id="advertising">
+        <div class="section-copy">
+          <h2 class="section-title">
+            <%= link_to "広告出稿", what_we_do_path(anchor: "service-advertising") %>
+          </h2>
+          <p>
+            英語で広告出稿するのは一筋縄ではいきません。
+            訪日外国人観光客向けはもちろん、海外市場向けの広告もわたしたちにお任せください。
+          </p>
+        </div>
+      </div>
+      <div class="home-section" id="localising">
+        <div class="section-copy">
+          <h2 class="section-title">
+            <%= link_to "国際化", what_we_do_path(anchor: "service-localising") %>
+          </h2>
+          <p>
+            ウェブサイトやアプリを英語化することは、日本語を話さない人たちへ商品やサービスを提供したい時に非常に重要です。
+            私たちのネイティブデベロッパーがあなたのメディアを国際化します。
+          </p>
+        </div>
+      </div>
+      <div class="home-section" id="forwarding">
+        <div class="section-copy">
+          <h2 class="section-title">
+            <%= link_to "転送", what_we_do_path(anchor: "service-forwarding") %>
+          </h2>
+          <p>
+            サイトもアプリも英語化したのはいいけど、英語の問い合わせに対応できる人がいない・・・
+            大丈夫です。私たちが英語の問い合わせを日本語に翻訳して１営業日内にお届けします。
+          </p>
+        </div>
+      </div>
+    </div>
+  <div class="home-section-gradient">
+    <div class="section-copy">
+      <h2 class="section-title">お問い合わせはこちら</h2>
+      <div class="contact-links">
+        <%= link_to "今すぐ問い合わせる", contact_path, class: "btn outline btn-lg btn-primary" %>
+      </div>
+    </div>
+    <p class="small-links"><%= link_to "もっと詳細を知りたい方はこちら", what_we_do_path %></p>
+
+  </div>
+</div>

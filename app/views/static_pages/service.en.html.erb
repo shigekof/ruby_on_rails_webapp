@@ -1,0 +1,115 @@
+<% provide(:title, "What we do") %>
+<% content_for(:body_attributes) do %>
+    data-turbolinks="false"
+<% end %>
+<div class="service-image-container">
+  <div class="service service-img">
+    <div class="service-img-trans">
+      <div class="service-title">
+        <h1>What we do</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=service-subtitle>
+  <h2>
+    Work with us and you will have lot of things you need to connect with Japanese
+    consumers. We provide marketing, advertising, research, translation and app
+    Internationalization services. Whether you want to provide services, sell
+    products or create websites and apps, we can help you navigate the complex
+    consumer beast that is Japan.
+  </h2>
+</div>
+<div class="content-container">
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-test.png", alt: "Marketing"), '#service-marketing' %>
+      <h1><%= link_to "Marketing", '#service-marketing' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-landing.png", alt: "Advertising"), '#service-advertising' %>
+      <h1><%= link_to "Advertising", '#service-advertising' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-internationalization.png", alt: "Localising"), '#service-localising' %>
+      <h1><%= link_to "Web Translation", '#service-localising' %></h1>
+    </div>
+  </div>
+  <div class="service-content">
+    <div class="service-pic">
+      <%= link_to image_tag("service-forwarding.png", alt: "Forwarding"), '#service-forwarding' %>
+      <h1><%= link_to "Customer Relations", '#service-forwarding' %></h1>
+    </div>
+  </div>
+</div>
+<div class="service-section">
+  <div class="service-marketing" id="service-marketing">
+    <h1>Marketing</h1>
+    <p>
+      Marketing in Japan can be tricky for non-Japanese. Knowing your customers, their needs, your value proposition and who your competitors are is tricky enough in an English speaking environment, let alone in a country like Japan. We can take care of the market analytics for you.
+      </br>
+      </br>
+    </p>
+    <ul>
+      Examples of what we do:</br>
+      <li>Consult on your marketing strategy in Japan so that you reach consumers
+      in the right way and avoid any cultural misunderstandings.</li>
+      <li>Collect and compile information about the state of the market and your
+      competitors so that you can have a good idea of what is going on there at
+      ground level.</li>
+      <li>reate and maintain social network accounts in Japanese so that customers
+      can find you in their medium of choice.</li>
+    </ul>
+    <div class="service-marketing-pic">
+      <%= image_tag("sns-logos.png", alt: "Testing the market") %>
+    </div>
+  </div>
+  <div class="service-advertising" id="service-advertising">
+    <h1>Advertising</h1>
+    <p>
+      We make businesses visible to Japanese consumers.
+      We can create and/or run ads for you with Goodle Adwords,
+      Yahoo Promotional Ads or social medias like Facebook, Twitter, Youtube, Instagram, etc.
+    </p>
+    <ul>
+      Examples of what we do:</br>
+      <li>Help you pick the right keywords for search engine marketing, or even run it for you.</li>
+      <li>Analyse web traffic, conversions and page views to optimise your advertising strategy.</li>
+      <li>Create ads in Japanese and run them in social medias.</li>
+    </ul>
+    <div class="service-marketing-pic">
+      <%= image_tag("sem-logos.png", alt: "Testing the market") %>
+    </div>
+  </div>
+  <div class="service-localising" id="service-localising">
+    <h1>Web Translation</h1>
+    <p>
+      The level of English comprehension in Japan is not very high. Whilst many
+      Japanese will understand basic phrases, most will not understand much
+      beyond this. It is essential that you reach Japanese customers in their
+      native tongue. Our bilingual developers can translate your existing work
+      or create a brand new fully customised project from scratch, in both
+      English and Japanese.
+    </p>
+    <ul>
+      Examples of what we do:</br>
+      <li>Internationalise and translate your existing websites or applications.</li>
+      <li>Create bilingual pages in English and Japanese.</li>
+      <li>Maintain and update the above-mentioned projects.</li>
+    </ul>
+  </div>
+  <div class="service-forwarding" id="service-forwarding">
+    <h1>Customer Relations</h1>
+    <p>
+      Interacting with Japanese customers is a barrier for many non-Japanese companies. We can provide you with an email address where Japanese consumers can reach you and we will translate the email content into English for you.
+    </p>
+    <ul>
+      Example of what we do:</br>
+      <li>Translate emails from Japan and forward them to you.</li>
+    </ul>
+  </div>
+</div>

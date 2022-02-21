@@ -1,0 +1,14 @@
+<% provide(:title, @user.username) %>
+<div class="content-container">
+  <div class="page-content">
+    <h1>
+      <%= @user.username %>
+    </h1>
+    <div class="col-md-4 col-md-offset-4 list-group">
+      <%= link_to "Your apps", 'chatroom_new_path', class:"list-group-item" %>
+      <%= link_to "Services",    'chatrooms_path', class:"list-group-item" %>
+      <%= link_to "Profile", edit_user_path(@user), class:"list-group-item" %>
+      <%= link_to "Billing", 'sales_path', class:"list-group-item" %>
+    </div>
+  </div>
+</div>
