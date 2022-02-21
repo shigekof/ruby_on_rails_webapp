@@ -1,0 +1,35 @@
+<% provide(:title, "Contact") %>
+<div class="content-container">
+  <div class="page-content">
+    <div class="form-page">
+      <h1><%= t('.contact_us') %></h1>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <%= form_for(@contact, url: contact_path) do |f| %>
+
+            <%= f.label :company_name, t('.company_name') %>
+            <%= f.text_field :company_name, class: 'form-control'  %>
+
+            <%= f.label :name, t('.name') %>
+            <%= f.text_field :name, required: true, class: 'form-control'  %>
+
+            <%= f.label :email, t('.email') %>
+            <%= f.email_field :email, required: true, class: 'form-control'  %>
+
+            <%= f.label :message, t('.message')%>
+            <%= f.text_area :message, as: :text, required: true, class: 'form-control'  %>
+
+            <div class="hidden">
+              <% f.label :nickname %>
+              <% f.text_field :nickname, hint: 'leave this field blank' %>
+            </div>
+
+            <div class="form-button">
+              <%= f.submit t('.send'), class: "btn btn-info btn-block" %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
